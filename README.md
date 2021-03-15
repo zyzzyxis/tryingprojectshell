@@ -19,16 +19,16 @@ TLDR: need to clone with new name, replace db with unique name
 
 ## HANDLE GITHUB (new repo)
 Two ways to do this. 
-1: Remove remote to github and add new one (easiest and preferred) This keeps the commit history of the shell project.
+1. Remove remote to github and add new one (easiest and preferred) This keeps the commit history of the shell project.
     - `git remote rm origin`
     - create a new github repo
     - `git remote add origin sshlinktorepo`
     
-2: Remove git repo entirely and recreate a new repo. this will get rid of the history of any prior commits in the shell project
-    $ rm -rf .git
-    $ git init
-    $ git status
-    $ git add .
-    $ git commit -m 'init'
-    $ git remote add origin sshlinktorepo
-    $ git push origin master
+2. Remove git repo entirely and recreate a new repo. this will get rid of the history of any prior commits in the shell project
+   - $ rm -rf .git
+   - $ git init
+   - $ git status
+   - $ git add .
+   - $ git commit -m 'init'
+   - $ git remote add origin sshlinktorepo
+   - $ git push origin master
